@@ -34,7 +34,7 @@ def rsa_decryption(cyphertext, d_hex, n):
 
     return decrypted_data
 
-for i in range(4):
+for i in range(5):
     decrypted_data = rsa_decryption(cyphertext[i], d_hex, n)
-    print("\n\nOAEP(P) / RSA decrypted data: ", i, " ", cyphertext[i])
+    print("\n\nOAEP(P) / RSA encrypted data: ", i, " ", cyphertext[i])
     print("OAEP(P) / RSA decrypted data: ", i, " ", decrypted_data)
